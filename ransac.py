@@ -94,7 +94,7 @@ if __name__ == "__main__":
     k = 100
     inlier_points_name, outlier_points_name = solution(input_points, t, d, k)  # TODO
     assert len(inlier_points_name) + len(outlier_points_name) == 8  
-    f = open('./results/task1_result.txt', 'w')
+    f = open('./ransac.txt', 'w')
     f.write('inlier points: ')
     for inliers in inlier_points_name:
         f.write(inliers + ',')
